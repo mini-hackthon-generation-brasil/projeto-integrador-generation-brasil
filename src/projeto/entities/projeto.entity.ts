@@ -1,4 +1,5 @@
 import { IsNotEmpty } from 'class-validator';
+import { GrupoPI } from 'src/grupoPI/entities/grupoPI.entity';
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'tb_projeto' })
@@ -21,6 +22,6 @@ export class Projeto {
   @Column({ length: 300, nullable: false })
   public pitProjeto: string;
 
-  // @OneToMany(() => GrupoPI, (grupopi) => grupopi.projeto)
-  //     grupopi: GrupoPI[]
+  @OneToMany(() => GrupoPI, (grupopi) => grupopi.projeto)
+      grupoPI: GrupoPI[]
 }
