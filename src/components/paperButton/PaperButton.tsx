@@ -1,12 +1,9 @@
 import React from 'react';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Grid, { GridSpacing } from '@material-ui/core/Grid';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import Radio from '@material-ui/core/Radio';
 import Paper from '@material-ui/core/Paper';
-import { Box } from '@material-ui/core';
+import NavBar from '../NavBar/NavBar';
+import "./PaperButton.css"
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -14,11 +11,11 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
     },
     paper: {
-      height: 140,
-      width: 100,
+      height: 200,
+      width: 200,
     },
     control: {
-      padding: theme.spacing(2),
+      padding: theme.spacing(6),
     },
   }),
 );
@@ -32,14 +29,17 @@ export default function PaperButton() {
   };
 
   return (
-    <Grid container spacing={2} className='row'>
-     
-      <Grid item xs={12 } className='row'>
-        <Grid container justifyContent="center" alignContent='center'className='row' spacing={spacing}>
-            <Grid item className='row'>
-              <Paper elevation={24} className={classes.paper}> khjkjkhjkhkj</Paper>
-              <Paper elevation={24} className={classes.paper}> asdasdasd</Paper>
-            </Grid>
+    <Grid container xs={12}spacing={2}>
+      <NavBar />
+
+      <Grid item xs={12}>
+        <Grid container justifyContent="center" alignContent='center' spacing={spacing}>
+          {/* <Grid item xs={2} spacing={3} className="btn-zoom"> */}
+          <Paper elevation={3} className="btn-zoom"> Poste seu projeto aqui </Paper>
+          {/* </Grid> */}
+          {/* <Grid item xs={2} spacing={3} className="btn-zoom"> */}
+            <Paper elevation={3} className="btn-zoom"> Vizualizar os projetos </Paper>
+          {/* </Grid> */}
         </Grid>
       </Grid>
     </Grid>
