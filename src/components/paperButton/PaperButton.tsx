@@ -3,7 +3,7 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Grid, { GridSpacing } from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import "./PaperButton.css"
-import ModalPostagem from '../modalPostagem/ModalPostagem';
+import ModalPostagem from '../modalProjetos/ModalProjetos';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

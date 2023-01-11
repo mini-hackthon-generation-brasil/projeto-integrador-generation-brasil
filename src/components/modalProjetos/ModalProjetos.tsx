@@ -7,7 +7,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import "./ModalPostagem.css";
 import Formulario from "../formulario/Formulario";
 import PaperButton from "../paperButton/PaperButton";
-import { ButtonInicio } from "../button/ButtonInicio";
+import { ButtonInicio } from "../buttonInicio/ButtonInicio";
 
 function getModalStyle() {
   const top = 50;

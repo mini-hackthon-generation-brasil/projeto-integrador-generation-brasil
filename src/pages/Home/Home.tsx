@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Stack } from "@mui/material";
-import ModalPostagem from "../../components/modalPostagem/ModalPostagem";
+import ModalPostagem from "../../components/modalProjetos/ModalProjetos";
 
 function Home() {
   const [open, setOpen] = React.useState(false);
