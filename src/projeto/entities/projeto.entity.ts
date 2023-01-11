@@ -2,7 +2,7 @@ import { IsNotEmpty } from 'class-validator';
 import { GrupoPI } from 'src/grupoPI/entities/grupoPI.entity';
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity({ name: 'tb_projeto' })
+@Entity({ name: 'Projeto' })
 export class Projeto {
   @PrimaryGeneratedColumn()
   public id: number;

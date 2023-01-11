@@ -3,7 +3,7 @@ import { Projeto } from 'src/projeto/entities/projeto.entity';
 import { Turma } from 'src/turma/entities/turma.entity';
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity({ name: 'tb_grupoPI' })
+@Entity({ name: 'GrupoPi' })
 export class GrupoPI {
   @PrimaryGeneratedColumn()
   id: number;

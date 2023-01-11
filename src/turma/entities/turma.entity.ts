@@ -2,7 +2,7 @@ import { IsNotEmpty } from "class-validator";
 import { GrupoPI } from "src/grupoPI/entities/grupoPI.entity";
 import { Column, Entity, OneToMany, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity({name: 'tb_turma'})
+@Entity({name: 'Turma'})
 export class Turma {
 
     @PrimaryGeneratedColumn()
