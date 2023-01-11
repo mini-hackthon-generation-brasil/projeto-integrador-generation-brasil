@@ -1,11 +1,13 @@
 import React from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
-import { Button } from "@material-ui/core";
+import { Button, Grid, Paper } from "@material-ui/core";
 import { Box } from "@mui/material";
 import CloseIcon from "@material-ui/icons/Close";
 import "./ModalPostagem.css";
 import Formulario from "../formulario/Formulario";
+import PaperButton from "../paperButton/PaperButton";
+import { ButtonInicio } from "../button/ButtonInicio";
 
 function getModalStyle() {
   const top = 50;
@@ -61,16 +63,14 @@ function ModalPostagem() {
 
   return (
     <div>
-      <Button
-        size="large"
-        variant="outlined"
-        className="btnModal"
-        fullWidth
-        onClick={handleOpen}
-      >
-        Criar nova publicação...
-      </Button>
-
+      <Grid container className="grid">
+        <Grid item xs={10} sm={7} md={6} lg={5} xl={4} className="grid">
+          <ButtonInicio txt="Poste seu projeto aqui" callback={handleOpen} />
+        </Grid>
+        <Grid item xs={10} sm={7} md={6} lg={5} xl={4} className="grid">
+          <ButtonInicio txt="Visualizar os projetos" callback={handleOpen} />
+        </Grid>
+      </Grid>
       <Modal
         open={open}
         onClose={handleClose}

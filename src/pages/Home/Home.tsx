@@ -1,16 +1,24 @@
-import React from "react"
-import PaperButton from "../../components/paperButton/PaperButton"
-import "./Home.css"
-import { Stack } from '@mui/material';
+import React from "react";
+import "./Home.css";
+import { Stack } from "@mui/material";
+import ModalPostagem from "../../components/modalPostagem/ModalPostagem";
 
 function Home() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Stack>
-     
-        <PaperButton />
-    
+      <ModalPostagem />
     </Stack>
-  )
+  );
 }
 
-export { Home }
+export { Home };
