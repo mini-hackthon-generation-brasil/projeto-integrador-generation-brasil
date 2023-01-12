@@ -1,13 +1,11 @@
 import React from "react";
 import { ButtonInicio } from "../../components/buttonInicio/ButtonInicio";
+import ModalTurma from "../../components/modals/modalTurma/ModalTurma";
 
 function PageTurma() {
     return(
         <>
-        <ButtonInicio
-          txt="Turmas"
-          className="btn-zoomTurma"
-        />
+        <ModalTurma />
         </>
     )
 }

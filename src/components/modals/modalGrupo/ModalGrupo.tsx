@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { Grid } from "@material-ui/core";
-import { Box } from "@mui/material";
+import { Box, Link } from "@mui/material";
 import CloseIcon from "@material-ui/icons/Close";
 import "./ModalGrupo.css";
 import { ButtonInicio } from "../../buttonInicio/ButtonInicio";
@@ -67,13 +67,19 @@ function ModalGrupo() {
          */}
         <Grid container className="grid">
           <Grid item xs={10} sm={7} md={6} lg={5} xl={4} className="grid">
-            <ButtonInicio txt="Postar o grupo" callback={handleOpen} className="btnz-zoom" />
+            <ButtonInicio
+              txt="Postar o grupo"
+              callback={handleOpen}
+              className="btn-zoom"
+            />
           </Grid>
           <Grid item xs={10} sm={7} md={6} lg={5} xl={4} className="grid">
-            <ButtonInicio txt="Visualizar os grupos" callback={handleOpen} className="btn-zoom" />
+            <Link href="/listar-grupos">
+              <ButtonInicio txt="Visualizar os grupos" className="btn-zoom" />
+            </Link>
           </Grid>
         </Grid>
-        
+
         {/**
          * @Desc - Modal que apresenta o formulário de criar projeto
          */}
