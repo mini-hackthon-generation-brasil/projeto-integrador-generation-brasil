@@ -38,7 +38,7 @@
   .btn-zoom:hover:after{
     content:" compartilhe seu projeto conosco";
     font-size:20px;
-    color: rgb(113, 144, 119);
+    color: rgb(208, 70, 70);
   }
   .btn-zoom:active {
     transform: scale(1);
