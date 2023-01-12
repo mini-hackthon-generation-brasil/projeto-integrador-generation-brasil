@@ -1,10 +1,10 @@
 import React from "react";
 
-function ListaPostagem(){
+function ListaProjeto(){
     return(
         <>
         </>
     )
 }
 
-export { ListaPostagem}
+export { ListaProjeto}

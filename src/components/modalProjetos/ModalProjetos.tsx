@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
-import { Grid } from "@material-ui/core";
+import { Grid, Link } from "@material-ui/core";
 import { Box } from "@mui/material";
 import CloseIcon from "@material-ui/icons/Close";
 import "./ModalProjetos.css";
@@ -67,10 +67,12 @@ function ModalPostagem() {
          */}
         <Grid container className="grid">
           <Grid item xs={10} sm={7} md={6} lg={5} xl={4} className="grid">
-            <ButtonInicio txt="Poste seu projeto aqui" callback={handleOpen} className="btnz-zoom" />
+            <ButtonInicio txt="Poste seu projeto aqui" callback={handleOpen} className="btn-zoom" />
           </Grid>
           <Grid item xs={10} sm={7} md={6} lg={5} xl={4} className="grid">
-            <ButtonInicio txt="Visualizar os projetos" callback={handleOpen} className="btn-zoom"/>
+            <Link href="/listar-projetos">
+              <ButtonInicio txt="Visualizar os projetos" className="btn-zoom2"/>
+            </Link>
           </Grid>
         </Grid>
         
