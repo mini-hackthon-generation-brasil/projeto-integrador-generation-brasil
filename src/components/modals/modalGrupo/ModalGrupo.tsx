@@ -4,7 +4,7 @@ import Modal from "@material-ui/core/Modal";
 import { Grid } from "@material-ui/core";
 import { Box } from "@mui/material";
 import CloseIcon from "@material-ui/icons/Close";
-import "./ModalProjetos.css";
+import "./ModalGrupo.css";
 import { ButtonInicio } from "../../buttonInicio/ButtonInicio";
 import FormGrupo from "../../Forms/FormGrupo/FormGrupo";
 
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function ModalPostagem() {
+function ModalGrupo() {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
@@ -67,10 +67,10 @@ function ModalPostagem() {
          */}
         <Grid container className="grid">
           <Grid item xs={10} sm={7} md={6} lg={5} xl={4} className="grid">
-            <ButtonInicio txt="Poste seu projeto aqui" callback={handleOpen} className="btnz-zoom" />
+            <ButtonInicio txt="Postar o grupo" callback={handleOpen} className="btnz-zoom" />
           </Grid>
           <Grid item xs={10} sm={7} md={6} lg={5} xl={4} className="grid">
-            <ButtonInicio txt="Visualizar os projetos" callback={handleOpen} className="btn-zoom"/>
+            <ButtonInicio txt="Visualizar os grupos" callback={handleOpen} className="btn-zoom" />
           </Grid>
         </Grid>
         
@@ -89,4 +89,4 @@ function ModalPostagem() {
     </>
   );
 }
-export default ModalPostagem;
+export default ModalGrupo;

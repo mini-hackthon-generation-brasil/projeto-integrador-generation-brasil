@@ -1,11 +1,11 @@
 import React from "react"
 import { ButtonInicio } from "../../components/buttonInicio/ButtonInicio"
-import ModalPostagem from "../../components/modalProjetos/ModalProjetos"
+import ModalProjeto from "../../components/modals/modalProjetos/ModalProjetos"
 
 function PageProjeto() {
     return(
         <>
-        <ModalPostagem/>
+        <ModalProjeto/>
         </>
     )
 }

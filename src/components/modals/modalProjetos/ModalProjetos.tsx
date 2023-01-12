@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function ModalPostagem() {
+function ModalProjeto() {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
@@ -91,4 +91,4 @@ function ModalPostagem() {
     </>
   );
 }
-export default ModalPostagem;
+export default  ModalProjeto;
