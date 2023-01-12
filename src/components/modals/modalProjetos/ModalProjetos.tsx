@@ -5,8 +5,8 @@ import { Grid } from "@material-ui/core";
 import { Box } from "@mui/material";
 import CloseIcon from "@material-ui/icons/Close";
 import "./ModalProjetos.css";
-import Formulario from "../formulario/Formulario";
-import { ButtonInicio } from "../buttonInicio/ButtonInicio";
+import { ButtonInicio } from "../../buttonInicio/ButtonInicio";
+import FormProjeto from "../../Forms/FormProjeto/FormProjeto";
 
 function getModalStyle() {
   const top = 50;
@@ -55,7 +55,7 @@ function ModalPostagem() {
       <Box display="flex" justifyContent="flex-end" className="cursor">
         <CloseIcon onClick={handleClose} />
       </Box>
-      <Formulario />
+      <FormProjeto />
     </div>
   );
 
