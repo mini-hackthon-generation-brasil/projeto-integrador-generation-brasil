@@ -6,7 +6,7 @@ import { PageProjeto } from "./pages/Projeto/PageProjeto";
 import { PageGrupo } from "./pages/Grupo/PageGrupo";
 import { PageTurma } from "./pages/Turma/PageTurma";
 import { ListaProjeto } from "./pages/ListaProjeto/ListaProjeto";
-import { ListaTurma } from "./pages/ListaTurma/ListaTurma";
+import  ListaTurma  from "./pages/ListaTurma/ListaTurma";
 import { ListaGrupo } from "./pages/ListaGrupo/ListaGrupo";
 
 function App() {
